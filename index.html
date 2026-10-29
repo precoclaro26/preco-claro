@@ -154,6 +154,11 @@ el('clear').addEventListener('click',()=>{ids.forEach(id=>el(id).value='');el('q
 el('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(lastSummary);el('copy').textContent='Resumo copiado';setTimeout(()=>el('copy').textContent='Copiar resumo',1700);}catch(e){const ta=document.createElement('textarea');ta.value=lastSummary;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();const ok=document.execCommand('copy');ta.remove();el('copy').textContent=ok?'Resumo copiado':'Não foi possível copiar';setTimeout(()=>el('copy').textContent='Copiar resumo',1700);}});
 calculate();
 </script>
+<section style="margin:30px auto;padding:24px;max-width:800px;font-family:Arial,sans-serif">
+  <h2>Queres fazer uma promoção sem perder dinheiro?</h2>
+  <p>Aprende a calcular o desconto máximo antes de perderes lucro, com exemplos simples e uma ferramenta gratuita.</p>
+  <a href="./como-calcular-desconto.html">Ler o guia gratuito</a>
+</section>
 </body>
 </html>
 
