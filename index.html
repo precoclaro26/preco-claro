@@ -3,12 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calculadora gratuita de lucro por venda. Inclui custo do produto, materiais, tempo de trabalho, embalagem, envio e taxas. Faz as contas no teu navegador, sem registo.">
+<meta name="description" content="Calcula o lucro por venda, o preço mínimo e o efeito de descontos. Inclui materiais, tempo de trabalho, embalagem, envio e taxas. Grátis, sem registo.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://precoclaro26.github.io/preco-claro/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Preço Claro — Calculadora de Lucro e Descontos">
+<meta property="og:description" content="Vê quanto sobra por venda e como um desconto altera o teu lucro, sem registo e com cálculos no teu navegador.">
+<meta property="og:url" content="https://precoclaro26.github.io/preco-claro/">
 <meta name="theme-color" content="#176b4d">
-<title>Calculadora de Lucro por Venda | Preço Claro</title>
+<title>Calculadora de Lucro e Descontos por Venda | Preço Claro</title>
 <style>
 :root{--ink:#18231e;--muted:#65736b;--line:#dde7e0;--bg:#f4f8f5;--card:#fff;--green:#176b4d;--green2:#e6f5ec;--red:#a3382f;--amber:#fff3d8;--shadow:0 12px 36px rgba(22,49,33,.07)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1080px;margin:auto;padding:25px 18px 54px}.top{display:flex;align-items:center;gap:12px;margin-bottom:28px}.logo{width:46px;height:46px;flex:none;border-radius:14px;background:var(--green);display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px}.brand{font-weight:850;letter-spacing:-.03em;font-size:20px}.brand-sub{font-size:12px;color:var(--muted)}.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--green);margin:0 0 8px}h1{font-size:clamp(30px,5.2vw,47px);line-height:1.08;letter-spacing:-.045em;max-width:780px;margin:0 0 14px}.intro{font-size:17px;color:var(--muted);max-width:750px;margin:0 0 24px}.badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.badge{font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#355345}.layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr);gap:18px;align-items:start}.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:var(--shadow)}h2{font-size:19px;letter-spacing:-.025em;margin:0 0 18px}.sectionlabel{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);font-weight:850;margin:23px 0 12px}.sectionlabel:first-of-type{margin-top:0}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field.full{grid-column:1/-1}label{font-weight:680;font-size:13px}.inputwrap{display:flex;align-items:center;border:1px solid #cdd9d1;border-radius:12px;background:#fff;overflow:hidden}.inputwrap:focus-within{outline:3px solid #d9f0e1;border-color:var(--green)}.prefix{color:var(--muted);padding:0 0 0 12px;font-size:13px;white-space:nowrap}.suffix{color:var(--muted);padding:0 12px 0 0;font-size:13px;white-space:nowrap}.inputwrap input{width:100%;min-width:0;border:0;outline:0;padding:12px;font:inherit;background:transparent;color:var(--ink)}.hint{font-size:12px;color:var(--muted)}.results{position:sticky;top:16px}.hero-result{background:var(--green2);border-radius:16px;padding:19px;margin-bottom:15px}.result-label{font-size:13px;color:#28543e;font-weight:750}.profit{font-size:clamp(32px,4vw,41px);line-height:1.2;font-weight:900;letter-spacing:-.05em;color:#145739;margin:4px 0;overflow-wrap:anywhere}.profit.negative{color:var(--red)}.sub{font-size:12px;color:#42644f}.stat{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}.stat:last-of-type{border-bottom:0}.stat span{color:var(--muted);font-size:13px}.stat strong{font-variant-numeric:tabular-nums;text-align:right}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.btn{border:0;border-radius:12px;padding:12px 15px;font:inherit;font-size:14px;font-weight:800;cursor:pointer}.primary{background:var(--green);color:#fff}.secondary{background:#edf2ee;color:var(--ink)}.btn:hover{filter:brightness(.96)}.error{display:none;background:var(--amber);color:#624712;padding:11px 13px;border-radius:12px;margin-top:12px;font-size:13px}.explain{margin-top:21px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}.mini strong{display:block;margin-bottom:5px;font-size:14px}.mini p{margin:0;color:var(--muted);font-size:13px}.faq{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.faq h2{margin-bottom:10px}.faq h3{font-size:15px;margin:17px 0 5px}.faq p{margin:0;color:var(--muted);font-size:14px}.footnote{font-size:12px;color:var(--muted);margin-top:18px}.footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12px}.privacy{margin-top:14px;background:#f6faf7;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:13px;color:#486052}.privacy strong{color:var(--ink)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1080px;margin:auto;padding:25px 18px 54px}.top{display:flex;align-items:center;gap:12px;margin-bottom:28px}.logo{width:46px;height:46px;flex:none;border-radius:14px;background:var(--green);display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px}.brand{font-weight:850;letter-spacing:-.03em;font-size:20px}.brand-sub{font-size:12px;color:var(--muted)}.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--green);margin:0 0 8px}h1{font-size:clamp(30px,5.2vw,47px);line-height:1.08;letter-spacing:-.045em;max-width:780px;margin:0 0 14px}.intro{font-size:17px;color:var(--muted);max-width:750px;margin:0 0 24px}.badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.badge{font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#355345}.layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr);gap:18px;align-items:start}.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:var(--shadow)}h2{font-size:19px;letter-spacing:-.025em;margin:0 0 18px}.sectionlabel{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);font-weight:850;margin:23px 0 12px}.sectionlabel:first-of-type{margin-top:0}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field.full{grid-column:1/-1}label{font-weight:680;font-size:13px}.inputwrap{display:flex;align-items:center;border:1px solid #cdd9d1;border-radius:12px;background:#fff;overflow:hidden}.inputwrap:focus-within{outline:3px solid #d9f0e1;border-color:var(--green)}.prefix{color:var(--muted);padding:0 0 0 12px;font-size:13px;white-space:nowrap}.suffix{color:var(--muted);padding:0 12px 0 0;font-size:13px;white-space:nowrap}.inputwrap input{width:100%;min-width:0;border:0;outline:0;padding:12px;font:inherit;background:transparent;color:var(--ink)}.hint{font-size:12px;color:var(--muted)}.results{position:sticky;top:16px}.hero-result{background:var(--green2);border-radius:16px;padding:19px;margin-bottom:15px}.result-label{font-size:13px;color:#28543e;font-weight:750}.profit{font-size:clamp(32px,4vw,41px);line-height:1.2;font-weight:900;letter-spacing:-.05em;color:#145739;margin:4px 0;overflow-wrap:anywhere}.profit.negative{color:var(--red)}.sub{font-size:12px;color:#42644f}.stat{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}.stat:last-of-type{border-bottom:0}.stat span{color:var(--muted);font-size:13px}.stat strong{font-variant-numeric:tabular-nums;text-align:right}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.btn{border:0;border-radius:12px;padding:12px 15px;font:inherit;font-size:14px;font-weight:800;cursor:pointer}.primary{background:var(--green);color:#fff}.secondary{background:#edf2ee;color:var(--ink)}.btn:hover{filter:brightness(.96)}.error{display:none;background:var(--amber);color:#624712;padding:11px 13px;border-radius:12px;margin-top:12px;font-size:13px}.explain{margin-top:21px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}.mini strong{display:block;margin-bottom:5px;font-size:14px}.mini p{margin:0;color:var(--muted);font-size:13px}.faq{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.faq h2{margin-bottom:10px}.faq h3{font-size:15px;margin:17px 0 5px}.faq p{margin:0;color:var(--muted);font-size:14px}.footnote{font-size:12px;color:var(--muted);margin-top:18px}.footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12px}.privacy{margin-top:14px;background:#f6faf7;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:13px;color:#486052}.privacy strong{color:var(--ink)}.discount-intro{font-size:12px;color:var(--muted);margin:-8px 0 12px}.divider{height:1px;background:var(--line);margin:17px 0}
 @media(max-width:790px){.layout{grid-template-columns:1fr}.results{position:static}.explain{grid-template-columns:1fr}}@media(max-width:460px){.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.panel{padding:17px}main{padding-inline:13px}}
 </style>
 </head>
@@ -42,6 +48,10 @@
 <div class="field"><label for="fee">Taxa percentual</label><div class="inputwrap"><input id="fee" type="number" min="0" max="99.99" step="0.1" value="0" inputmode="decimal"><span class="suffix">%</span></div></div>
 <div class="field"><label for="fixedfee">Taxa fixa por unidade vendida</label><div class="inputwrap"><span class="prefix">€</span><input id="fixedfee" type="number" min="0" step="0.01" value="0" inputmode="decimal"></div></div>
 </div>
+<div class="sectionlabel">Promoções</div>
+<div class="fields">
+<div class="field"><label for="discount">Desconto a testar</label><div class="inputwrap"><input id="discount" type="number" min="0" max="99.9" step="1" value="10" inputmode="decimal"><span class="suffix">%</span></div><span class="hint">Simula uma redução sobre o preço de venda atual.</span></div>
+</div>
 <div class="sectionlabel">Objetivo</div>
 <div class="fields">
 <div class="field"><label for="targetprofit">Lucro pretendido por unidade</label><div class="inputwrap"><span class="prefix">€</span><input id="targetprofit" type="number" min="0" step="0.50" value="10" inputmode="decimal"></div></div>
@@ -62,6 +72,15 @@
 <div class="stat"><span>Preço para o lucro pretendido</span><strong id="targetPrice">€ 18,50</strong></div>
 <div class="stat"><span>Preço para a margem pretendida</span><strong id="marginPrice">€ 14,17</strong></div>
 <div class="stat"><span>Resultado estimado do lote</span><strong id="batchProfit">€ 16,50</strong></div>
+<div class="divider"></div>
+<h2>3. Se aplicares o desconto</h2>
+<p class="discount-intro">Estimativa usando os mesmos custos e taxas inseridos acima, sem IVA.</p>
+<div class="stat"><span>Preço após desconto</span><strong id="discountPrice">€ 22,50</strong></div>
+<div class="stat"><span>Lucro por unidade com desconto</span><strong id="discountProfit">€ 14,00</strong></div>
+<div class="stat"><span>Margem após desconto</span><strong id="discountMargin">62,2%</strong></div>
+<div class="stat"><span>Desconto máximo antes de prejuízo</span><strong id="maxDiscount">66,0%</strong></div>
+<div class="stat"><span>Unidades com desconto para igualar o lucro de 1 venda atual</span><strong id="unitsToMatch">2 un.</strong></div>
+<p class="footnote" id="discountNote">Com estes valores, 2 unidades com desconto geram pelo menos o lucro de 1 venda ao preço atual.</p>
 <p class="footnote">Os resultados são estimativas. Não incluem impostos, devoluções ou custos que não introduziste. Não constituem aconselhamento fiscal ou contabilístico.</p>
 </aside>
 </section>
@@ -74,6 +93,7 @@
 <h2>Perguntas frequentes</h2>
 <h3>Como calcular o lucro por venda?</h3><p>Começa pelo preço de venda e subtrai o custo do artigo ou materiais, embalagem, envio suportado por ti, outros custos e as taxas. Se quiseres uma estimativa mais realista, inclui também o valor do teu tempo e uma parte dos custos fixos.</p>
 <h3>Como calcular o preço mínimo de venda?</h3><p>A calculadora soma os custos indicados e considera as taxas percentuais e fixas para estimar o preço de equilíbrio. Também mostra preços de referência para atingir um lucro em euros ou uma margem pretendida.</p>
+<h3>Como é que um desconto afeta o lucro?</h3><p>O desconto reduz o preço recebido, mas os custos por unidade tendem a manter-se. Introduz uma percentagem na secção Promoções para estimar o novo lucro, a nova margem e quantas unidades com desconto seriam necessárias para igualar o lucro de uma venda ao preço atual. É uma simulação, não uma previsão de vendas.</p>
 <h3>O resultado inclui IVA e impostos?</h3><p>Não. Esta versão não calcula IVA, IRS ou IRC. O tratamento fiscal depende da situação concreta. Usa os valores como estimativa de custos e confirma as tuas obrigações em fontes oficiais ou com um profissional habilitado.</p>
 <h3>Posso usar para artigos feitos à mão ou serviços?</h3><p>Sim. Em produtos, inclui materiais e embalagem; em serviços, podes usar o campo de custos para despesas do trabalho e incluir o tempo dedicado. Ajusta as unidades para refletir o que realmente estás a vender.</p>
 </section>
@@ -81,7 +101,7 @@
 </main>
 <script>
 'use strict';
-const ids=['sale','quantity','cost','shipping','packaging','other','fixedcost','minutes','hourly','fee','fixedfee','targetprofit','targetmargin'];
+const ids=['sale','quantity','cost','shipping','packaging','other','fixedcost','minutes','hourly','fee','fixedfee','targetprofit','targetmargin','discount'];
 const el=id=>document.getElementById(id);
 const money=n=>new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR'}).format(n);
 const pct=n=>new Intl.NumberFormat('pt-PT',{style:'percent',minimumFractionDigits:1,maximumFractionDigits:1}).format(n);
@@ -90,8 +110,8 @@ let lastSummary='';
 function calculate(){
  const values=Object.fromEntries(ids.map(id=>[id,val(id)]));
  const error=el('error');
- if(ids.some(id=>!Number.isFinite(values[id])||values[id]<0)||values.quantity<1||!Number.isInteger(values.quantity)||values.fee>=100||values.targetmargin>=100){error.style.display='block';error.textContent='Verifica os valores: têm de ser iguais ou superiores a zero, as unidades têm de ser um número inteiro e as taxas/margem têm de ser inferiores a 100%.';return;}
- const {sale,quantity,cost,shipping,packaging,other,fixedcost,minutes,hourly,fee,fixedfee,targetprofit,targetmargin}=values;
+ if(ids.some(id=>!Number.isFinite(values[id])||values[id]<0)||values.quantity<1||!Number.isInteger(values.quantity)||values.fee>=100||values.targetmargin>=100||values.discount>=100){error.style.display='block';error.textContent='Verifica os valores: têm de ser iguais ou superiores a zero, as unidades têm de ser um número inteiro e as taxas, a margem e o desconto têm de ser inferiores a 100%.';return;}
+ const {sale,quantity,cost,shipping,packaging,other,fixedcost,minutes,hourly,fee,fixedfee,targetprofit,targetmargin,discount}=values;
  const labour=minutes/60*hourly;
  const base=cost+shipping+packaging+other+fixedcost+labour;
  const feeAmount=sale*fee/100+fixedfee;
@@ -103,19 +123,31 @@ function calculate(){
  const breakEven=(base+fixedfee)/denom;
  const targetPrice=(base+fixedfee+targetprofit)/denom;
  const marginPrice=targetDenom>0?(base+fixedfee)/targetDenom:NaN;
+ const discountedPrice=sale*(1-discount/100);
+ const discountedProfit=discountedPrice-base-(discountedPrice*percentFee)-fixedfee;
+ const discountedMargin=discountedPrice>0?discountedProfit/discountedPrice:NaN;
+ const maxDiscount=profit>=0&&sale>0?Math.max(0,Math.min(100,(1-((base+fixedfee)/(sale*denom)))*100)):NaN;
+ const unitsToMatch=profit>0&&discountedProfit>0?Math.ceil(profit/discountedProfit):NaN;
  el('profit').textContent=money(profit);el('profit').classList.toggle('negative',profit<0);
  el('subprofit').textContent=profit<0?'Com estes valores, a venda dá prejuízo.':'Depois dos custos que introduziste.';
  el('revenue').textContent=money(sale);el('totalcost').textContent=money(base);el('feeamount').textContent=money(feeAmount);
  el('margin').textContent=sale>0?pct(profit/sale):'—';
  el('breakEven').textContent=money(breakEven);el('targetPrice').textContent=money(targetPrice);el('marginPrice').textContent=Number.isFinite(marginPrice)?money(marginPrice):'Meta impossível com esta taxa';el('batchProfit').textContent=money(profit*quantity);
- lastSummary=`Preço Claro — resumo por unidade\nPreço de venda: ${money(sale)}\nCustos antes das taxas: ${money(base)}\nTaxas: ${money(feeAmount)}\nLucro estimado: ${money(profit)}\nMargem: ${sale>0?pct(profit/sale):'não aplicável'}\nPreço de equilíbrio: ${money(breakEven)}\nPreço para lucro pretendido: ${money(targetPrice)}\nPreço para margem pretendida: ${Number.isFinite(marginPrice)?money(marginPrice):'meta impossível com esta taxa'}\nUnidades: ${quantity}\nResultado estimado do lote: ${money(profit*quantity)}\n\nEstimativa não fiscal; confirma impostos e custos aplicáveis.`;
+ el('discountPrice').textContent=money(discountedPrice);
+ el('discountProfit').textContent=money(discountedProfit);el('discountProfit').style.color=discountedProfit<0?'var(--red)':'var(--ink)';
+ el('discountMargin').textContent=Number.isFinite(discountedMargin)?pct(discountedMargin):'—';
+ el('maxDiscount').textContent=Number.isFinite(maxDiscount)?pct(maxDiscount/100):'Já existe prejuízo ao preço atual';
+ el('unitsToMatch').textContent=Number.isFinite(unitsToMatch)?`${unitsToMatch} un.`:'Não aplicável';
+ el('discountNote').textContent=Number.isFinite(unitsToMatch)?`Com estes valores, ${unitsToMatch} unidade(s) com desconto geram pelo menos o lucro de 1 venda ao preço atual.`:(discountedProfit<=0?'Com este desconto, cada unidade gera prejuízo; aumentar o volume não resolve esse prejuízo unitário.':'O cálculo de unidades adicionais não se aplica porque o lucro atual não é positivo.');
+ lastSummary=`Preço Claro — resumo por unidade\nPreço de venda: ${money(sale)}\nCustos antes das taxas: ${money(base)}\nTaxas: ${money(feeAmount)}\nLucro estimado: ${money(profit)}\nMargem: ${sale>0?pct(profit/sale):'não aplicável'}\nPreço de equilíbrio: ${money(breakEven)}\nPreço para lucro pretendido: ${money(targetPrice)}\nPreço para margem pretendida: ${Number.isFinite(marginPrice)?money(marginPrice):'meta impossível com esta taxa'}\nDesconto testado: ${pct(discount/100)}\nPreço depois do desconto: ${money(discountedPrice)}\nLucro por unidade depois do desconto: ${money(discountedProfit)}\nUnidades com desconto para igualar o lucro atual: ${Number.isFinite(unitsToMatch)?unitsToMatch:'não aplicável'}\nUnidades: ${quantity}\nResultado estimado do lote: ${money(profit*quantity)}\n\nEstimativa não fiscal; confirma impostos e custos aplicáveis.`;
  error.style.display='none';
 }
 ids.forEach(id=>el(id).addEventListener('input',calculate));
-el('reset').addEventListener('click',()=>{const v={sale:25,quantity:1,cost:8,shipping:0,packaging:.5,other:0,fixedcost:0,minutes:0,hourly:0,fee:0,fixedfee:0,targetprofit:10,targetmargin:40};Object.entries(v).forEach(([k,x])=>el(k).value=x);calculate();});
+el('reset').addEventListener('click',()=>{const v={sale:25,quantity:1,cost:8,shipping:0,packaging:.5,other:0,fixedcost:0,minutes:0,hourly:0,fee:0,fixedfee:0,targetprofit:10,targetmargin:40,discount:10};Object.entries(v).forEach(([k,x])=>el(k).value=x);calculate();});
 el('clear').addEventListener('click',()=>{ids.forEach(id=>el(id).value='');el('quantity').value='1';calculate();});
 el('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(lastSummary);el('copy').textContent='Resumo copiado';setTimeout(()=>el('copy').textContent='Copiar resumo',1700);}catch(e){const ta=document.createElement('textarea');ta.value=lastSummary;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();const ok=document.execCommand('copy');ta.remove();el('copy').textContent=ok?'Resumo copiado':'Não foi possível copiar';setTimeout(()=>el('copy').textContent='Copiar resumo',1700);}});
 calculate();
 </script>
 </body>
 </html>
+
